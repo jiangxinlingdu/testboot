@@ -87,6 +87,7 @@
                             <resources>
                                 <resource>
                                     <includes>
+                                        <!-- 仅仅拷贝 demo.jar -->
                                         <include>demo.jar</include>
                                     </includes>
                                     <!--项目中的路径-->
