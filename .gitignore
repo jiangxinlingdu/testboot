@@ -42,5 +42,3 @@ compiler/gradle.properties
 compiler/build/*
 compiler/.gradle/*
 
-# protobuf
-dubbo-serialization/dubbo-serialization-protobuf/build/*
