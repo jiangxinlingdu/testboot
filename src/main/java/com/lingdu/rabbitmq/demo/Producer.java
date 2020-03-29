@@ -24,7 +24,7 @@ public class Producer {
 
         // 通过 Channel 发送数据
         String msg = "rabbitmq test";
-        channel.basicPublish("","test001",null,msg.getBytes());
+        channel.basicPublish("", "test001", null, msg.getBytes());
 
         // 关键相关连接
         channel.close();
