@@ -5,9 +5,6 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.QueueingConsumer;
 
-import java.io.IOException;
-import java.util.concurrent.TimeoutException;
-
 public class Consumer {
 
     public static void main(String[] args) throws Exception {

@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 @RestController
 public class TestAction {
 
+    // 测试地址： http://192.168.116.115:8888/hello?name=lingdu
     @GetMapping("/hello")
     public String sayHello(HttpServletRequest request, HttpServletResponse response) {
         //姓名
@@ -19,6 +20,10 @@ public class TestAction {
 
 
         return "Hello World!";
+    }
+
+    private  void test(){
+        System.out.println("test");
     }
 
 }

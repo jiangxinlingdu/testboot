@@ -2,8 +2,6 @@ package com.lingdu.idea.demo.lingdu666;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class MethodCallTest {
 
     @Test

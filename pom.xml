@@ -87,7 +87,7 @@
                             <encoding>UTF-8</encoding>
                             <!--打成jar包后复制到的路径-->
                             <outputDirectory>
-                                /Users/lingdu/data/vagrant/centos7.0
+                                /Users/lingdu/data/vagrant/centos7.0/node1
                             </outputDirectory>
                             <resources>
                                 <resource>
