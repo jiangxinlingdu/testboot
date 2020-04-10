@@ -3,6 +3,8 @@ package com.lingdu.idea.demo.lingdu666;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.text.SimpleDateFormat;
+
 
 /**
  * @author lingdu
@@ -18,10 +20,11 @@ public class MethodCall {
 
     public static void main(String[] args) {
 
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-mm-dd");
 
         LOGGER.info("test");
 
-        // TODO: lingdu 2020-03-08 17:43:35 这个地方有点卡 需要考虑优化啊下
+        // TODO: lingdu 2020-03-08  这个地方有点卡 需要考虑优化啊下
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
