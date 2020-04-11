@@ -21,10 +21,14 @@ public class Producer {
 
         // 通过 Connection 获取 Channel
         Channel channel = connection.createChannel();
+        //声明交换器，类型为direct
+        channel.exchangeDeclare("direct_exchange", "direct");
 
         // 通过 Channel 发送数据
         String msg = "rabbitmq test";
-        channel.basicPublish("", "test001", null, msg.getBytes());
+        for (int i = 0; i < 100; i++) {
+            channel.basicPublish("direct_exchange", "test", null, msg.getBytes());
+        }
 
         // 关键相关连接
         channel.close();

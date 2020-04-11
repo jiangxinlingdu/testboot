@@ -5,7 +5,7 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.QueueingConsumer;
 
-public class Consumer {
+public class Consumer1 {
 
     public static void main(String[] args) throws Exception {
         // 创建 ConnectionFactory
@@ -22,11 +22,11 @@ public class Consumer {
         Channel channel = connection.createChannel();
 
         //声明一个队列
-        String queueName = "test003";
+        String queueName = "test002";
         channel.queueDeclare(queueName, false, false, false, null);
-        //绑定队列到交换机，指定路由key为test
-        channel.queueBind(queueName,"direct_exchange","test");
 
+        //绑定队列到交换机，指定路由key为test
+        channel.queueBind(queueName, "direct_exchange", "test");
 
         //创建消费者
         QueueingConsumer queueingConsumer = new QueueingConsumer(channel);
