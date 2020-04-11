@@ -23,6 +23,8 @@ public class Consumer {
 
         //声明一个队列
         String queueName = "test003";
+        //声明交换器，类型为direct
+        channel.exchangeDeclare("direct_exchange", "direct");
         channel.queueDeclare(queueName, false, false, false, null);
         //绑定队列到交换机，指定路由key为test
         channel.queueBind(queueName,"direct_exchange","test");
