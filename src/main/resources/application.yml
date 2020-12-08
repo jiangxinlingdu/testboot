@@ -2,3 +2,20 @@ server:
     port: 8888
     address: 0.0.0.0
 
+apollo:
+    bootstrap:
+        enabled: true
+spring:
+    thymeleaf:
+        cache: true
+        encoding: utf-8
+        enabled: true
+        prefix: classpath:/static/
+        suffix: .html
+    datasource:
+        url: ${lingdu:111111}
+        username: root
+        password: 123456
+        dbcp2:
+            driver-class-name: com.mysql.jdbc.Driver
+
